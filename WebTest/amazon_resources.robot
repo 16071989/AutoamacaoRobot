@@ -23,9 +23,9 @@ ${TEXTO_CARRINHO_VAZIO}               sc-item-C4c56f0a8-24fb-4b61-bc61-a56983b31
 Abrir o navegador
     Open Browser                      browser=${BROWSER}
     Maximize Browser Window 
-# Fechar o navegador
-#     Capture Page Screenshot            
-#     Close Browser
+Fechar o navegador
+    Capture Page Screenshot            
+    Close Browser
 Acessar a home page do site Amazon.com.br
     Go To                            ${URL}
     Wait Until Element Is Visible    locator=${MENU_TODOS}
@@ -73,8 +73,8 @@ Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
 E um produto da linha "Console Xbox Series S" deve ser mostrado na página
      Verificar o resultado da pequisa se está listando o produto "Console Xbox Series S"
 
-# GHERKIN STEPS Pratique automatizando mais esses 03 cenários:
-## Caso de Teste 03 - Adicionar Produto no Carrinho
+GHERKIN STEPS Pratique automatizando mais esses 03 cenários:
+Caso de Teste 03 - Adicionar Produto no Carrinho
 Dado que estou na home page da Amazon.com.br
     Acessar a home page do site Amazon.com.br
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
