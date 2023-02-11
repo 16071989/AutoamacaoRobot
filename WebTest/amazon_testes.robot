@@ -16,7 +16,7 @@ Caso de teste 01 - Acesso ao menu "Eletrônicos"
     Entrar no menu "eletrônicos e tecnologia"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Verificar se o título da página fica "Amazon.com.br : eletrônicos e tecnologia"
-    Verificar se aparece a categoria "Computadores e Informática"
+    Verificar se aparece a categoria "eletrônicos e tecnologia"
     Verificar se aparece a categoria "Livros de Ciências, Matemática e Tecnologia"
 Caso de teste 02 - Pesquisa de um produto
 

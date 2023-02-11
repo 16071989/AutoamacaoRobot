@@ -42,7 +42,6 @@ Verificar se o título da página fica "${TITULO}"
     Title Should Be                  title=${TITULO}
 Verificar se aparece a categoria "${NOME_CATEGORIA}"
     Element Should Be Visible    locator=//span[@class='a-size-base a-color-base'][contains(.,'${NOME_CATEGORIA}')]
-
 Digitar o nome de produto "${PRODUTO}" no campo de pesquisa
     Wait Until Location Is Not       location=${CAMPO_PESQUISA}
     Sleep                            2s
@@ -52,8 +51,8 @@ Clicar no botão de pesquisa
 Verificar o resultado da pequisa se está listando o produto "${CONSOLE}"
     Wait Until Location Is Not       location=(//span[contains(.,'${CONSOLE}')])[2]
 
-# GHERKIN STEPS
-Dado que estou na home page da Amazon.com.br
+GHERKIN STEPS
+    Dado que estou na home page da Amazon.com.br
     Acessar a home page do site Amazon.com.br
     Verificar se o título da página fica "Amazon.com.br | Tudo pra você, de A a Z."
 Quando acessar o menu "Eletrônicos"
@@ -64,7 +63,6 @@ E o texto "Eletrônicos e Tecnologia" deve ser exibido na página
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
 E a categoria "Computadores e Informática" deve ser exibida na página
     Verificar se aparece a categoria "Computadores e Informática"
-
 Quando pesquisar pelo produto "Xbox Series S"
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
@@ -72,7 +70,6 @@ Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
     Verificar se o título da página fica "Amazon.com.br : Xbox Series S"
 E um produto da linha "Console Xbox Series S" deve ser mostrado na página
      Verificar o resultado da pequisa se está listando o produto "Console Xbox Series S"
-
 GHERKIN STEPS Pratique automatizando mais esses 03 cenários:
 Caso de Teste 03 - Adicionar Produto no Carrinho
 Dado que estou na home page da Amazon.com.br
@@ -92,9 +89,8 @@ Quando adicionar o produto "Console Xbox Series S" no carrinho
     Click Element    locator=${BUTTON_IR_CARRINHO}
 Então o produto "${PRODUTO}" deve ser mostrado no carrinho
     Wait Until Element Is Visible    locator=//span[@class='a-truncate-cut'][contains(.,'${PRODUTO}')]
-
-## Caso de Teste 04 - Remover Produto do Carrinho
-E existe o produto "${XBOX}" no carrinho
+Caso de Teste 04 - Remover Produto do Carrinho
+    E existe o produto "${XBOX}" no carrinho
     Quando adicionar o produto "Console Xbox Series S" no carrinho
     Então o produto "Xbox Series S" deve ser mostrado no carrinho
 Quando remover o produto "Console Xbox Series S" do carrinho
